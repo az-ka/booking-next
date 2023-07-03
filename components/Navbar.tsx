@@ -14,6 +14,7 @@ const Navbar = () => {
         { title: "About", path: "/about" },
         { title: "Services", path: "/services" },
         { title: "Contact", path: "/contact" },
+        { title: "Booking", path: "/booking", class: "md:hidden" },
     ];
     return (
         <nav className="bg-white w-full border-b md:border-0 md:static">
@@ -78,7 +79,7 @@ const Navbar = () => {
                                         pathname == item.path
                                             ? "text-blue-600 hover:text-gray-600 font-medium"
                                             : "text--600 hover:text-blue-600 font-medium"
-                                    }`}
+                                    } ${item.class}`}
                                 >
                                     <a href={item.path}>{item.title}</a>
                                 </li>
