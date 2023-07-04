@@ -8,12 +8,13 @@ import { usePathname } from "next/navigation";
 const Navbar = () => {
     const [state, setState] = useState(false);
     const pathname = usePathname();
-    console.log(pathname);
+    // console.log(pathname);
     const navigation = [
         { title: "Home", path: "/" },
         { title: "About", path: "/about" },
         { title: "Services", path: "/services" },
         { title: "Contact", path: "/contact" },
+        { title: "Order", path: "/order" },
         { title: "Booking", path: "/booking", class: "md:hidden" },
     ];
     return (
