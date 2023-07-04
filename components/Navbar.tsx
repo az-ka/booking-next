@@ -11,9 +11,9 @@ const Navbar = () => {
     // console.log(pathname);
     const navigation = [
         { title: "Home", path: "/" },
-        { title: "About", path: "/about" },
-        { title: "Services", path: "/services" },
-        { title: "Contact", path: "/contact" },
+        { title: "About", path: "#" },
+        { title: "Services", path: "#" },
+        { title: "Contact", path: "#" },
         { title: "Order", path: "/order" },
         { title: "Booking", path: "/booking", class: "md:hidden" },
     ];
@@ -21,14 +21,21 @@ const Navbar = () => {
         <nav className="bg-white w-full border-b md:border-0 md:static">
             <div className="items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8">
                 <div className="flex items-center justify-between py-3 md:py-5 md:block">
-                    <a href="/">
-                        <Image
-                            src={"/logo.png"}
-                            alt={"Logo"}
-                            width={55}
-                            height={55}
-                        />
-                    </a>
+                    <div className="flex">
+                        <a href="/" className="mr-3">
+                            <Image
+                                src={"/logo.png"}
+                                alt={"Logo"}
+                                width={55}
+                                height={55}
+                            />
+                        </a>
+                        <h1 className="font-bold text-2xl italic">
+                            <span className="text-red-500">Auto</span>
+                            <span className="text-blue-500">Samsi</span>
+                        </h1>
+                    </div>
+
                     <div className="md:hidden">
                         <button
                             className="text-gray-700 outline-none p-2 rounded-md focus:border-gray-400 focus:border"
@@ -76,11 +83,7 @@ const Navbar = () => {
                             return (
                                 <li
                                     key={idx}
-                                    className={`${
-                                        pathname == item.path
-                                            ? "text-blue-600 hover:text-gray-600 font-medium"
-                                            : "text--600 hover:text-blue-600 font-medium"
-                                    } ${item.class}`}
+                                    className={`text--600 hover:text-blue-600 font-medium ${item.class}`}
                                 >
                                     <a href={item.path}>{item.title}</a>
                                 </li>

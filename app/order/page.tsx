@@ -63,7 +63,6 @@ const page = () => {
         <div>
             <section className="mt-12 mx-auto px-4 max-w-screen-xl md:px-8">
                 <div className="text-center">
-                    <h3 className="text-blue-600 font-semibold">Order</h3>
                     <p className="text-gray-800 text-3xl font-semibold sm:text-4xl">
                         Order Spare Part
                     </p>

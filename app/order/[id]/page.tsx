@@ -82,7 +82,7 @@ const page = () => {
                 <div className="container px-5 py-24 mx-auto">
                     <div className="lg:w-4/5 mx-auto flex flex-wrap">
                         <Image
-                            className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
+                            className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded shadow-lg"
                             width={1000}
                             height={1000}
                             src={`${selectedData?.img}`}
