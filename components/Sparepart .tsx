@@ -9,7 +9,7 @@ const Sparepart = () => {
                     <div className="p-4 py-8 border-b md:p-8">
                         <div className="max-w-6xl space-y-3">
                             <h1 className="text-2xl text-gray-800 font-semibold sm:text-3xl">
-                                Spare Part
+                                Ingin Membeli Spare Part?
                             </h1>
                             <p>
                                 Disini kami juga menyediakan Spare part

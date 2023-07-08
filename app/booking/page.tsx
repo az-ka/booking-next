@@ -5,7 +5,6 @@ const page = () => {
         <div className="py-14">
             <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
                 <div className="max-w-lg mx-auto space-y-3 sm:text-center">
-                    <h3 className="text-blue-600 font-semibold">Booking</h3>
                     <p className="text-gray-800 text-3xl font-semibold sm:text-4xl">
                         Ingin booking ditempat kami?
                     </p>
